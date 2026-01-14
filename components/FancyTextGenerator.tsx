@@ -41,24 +41,26 @@ export default function FancyTextGenerator() {
 
     return (
         <div className="w-full max-w-4xl mx-auto space-y-8">
-            {/* Input Area */}
-            <Card className="p-1 shadow-lg bg-background/50 backdrop-blur border-muted-foreground/10">
-                <div className="relative">
-                    <Textarea
-                        value={input}
-                        onChange={(e) => setInput(e.target.value)}
-                        placeholder="Type something amazing..."
-                        className="min-h-[160px] text-lg md:text-xl resize-none border-0 focus-visible:ring-0 bg-transparent p-6 placeholder:text-muted-foreground/50"
-                    />
-                    <div className="absolute top-4 right-4 flex gap-2">
-                        {input && (
-                            <Button variant="ghost" size="icon" onClick={handleClear} className="text-muted-foreground hover:text-foreground">
-                                <Trash2 className="w-4 h-4" />
-                            </Button>
-                        )}
+            {/* Input Area - Sticky */}
+            <div className="sticky top-4 z-20 mb-8">
+                <Card className="p-1 shadow-lg bg-background/95 backdrop-blur-md border-muted-foreground/10">
+                    <div className="relative">
+                        <Textarea
+                            value={input}
+                            onChange={(e) => setInput(e.target.value)}
+                            placeholder="Type something amazing..."
+                            className="min-h-[160px] text-lg md:text-xl resize-none border-0 focus-visible:ring-0 bg-transparent p-6 placeholder:text-muted-foreground/50"
+                        />
+                        <div className="absolute top-4 right-4 flex gap-2">
+                            {input && (
+                                <Button variant="ghost" size="icon" onClick={handleClear} className="text-muted-foreground hover:text-foreground">
+                                    <Trash2 className="w-4 h-4" />
+                                </Button>
+                            )}
+                        </div>
                     </div>
-                </div>
-            </Card>
+                </Card>
+            </div>
 
             {/* Stats / Info - MinimalistDivider */}
             <div className="flex items-center gap-2 text-xs font-medium text-muted-foreground uppercase tracking-widest pl-1">
