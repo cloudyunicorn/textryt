@@ -71,21 +71,14 @@ export default function FancyTextGenerator() {
                                     <Type className="w-3 h-3 text-muted-foreground/20 group-hover:text-primary/20" />
                                 </div>
 
-                                <p className="text-lg md:text-xl font-medium truncate text-foreground/90">
+                                <p className="text-lg md:text-xl font-medium break-words text-foreground/90">
                                     {transformedText}
                                 </p>
 
                                 {/* Hover Action */}
-                                <div className="md:absolute md:top-4 md:right-4 md:opacity-0 md:group-hover:opacity-100 transition-all duration-200">
-                                    <Button size="sm" variant="secondary" className="w-full md:w-auto shadow-sm gap-2 h-8 text-xs font-medium">
+                                <div className="hidden md:block md:absolute md:top-4 md:right-4 md:opacity-0 md:group-hover:opacity-100 transition-all duration-200">
+                                    <Button size="sm" variant="secondary" className="shadow-sm gap-2 h-8 text-xs font-medium">
                                         <Copy className="w-3.5 h-3.5" />
-                                        Copy
-                                    </Button>
-                                </div>
-                                {/* Mobile Action (Visible by default in layout, but let's make it cleaner - entire card click works, button is just visual cue) */}
-                                <div className="flex md:hidden justify-end mt-2">
-                                    <Button size="sm" variant="secondary" className="h-7 text-xs gap-1.5 w-full">
-                                        <Copy className="w-3 h-3" />
                                         Copy
                                     </Button>
                                 </div>
