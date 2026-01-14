@@ -172,9 +172,52 @@ export const fontStyles = [
   { id: 'wave', name: '≋ Wave ≋', map: {}, wrapper: { prefix: '≋', suffix: '≋' } },
   { id: 'square_bracket', name: '【Bracket】', map: {}, wrapper: { prefix: '【', suffix: '】' } },
   { id: 'cute_bracket', name: '『Cute』', map: {}, wrapper: { prefix: '『', suffix: '』' } },
-  { id: 'arrow', name: '→ Arrow →', map: {}, wrapper: { prefix: '→ ', suffix: ' ←' } },
+  { id: 'arrow', name: '→ Arrow ←', map: {}, wrapper: { prefix: '→ ', suffix: ' ←' } },
   { id: 'crown', name: '♛ Crown ♛', map: {}, wrapper: { prefix: '♛ ', suffix: ' ♛' } },
   { id: 'sparkle', name: '✨ Sparkle ✨', map: {}, wrapper: { prefix: '✨ ', suffix: ' ✨' } },
+
+  // Instagram & Decorative Styles
+  { id: 'flower', name: '❖❀～ Flower ～❀❖', map: {}, wrapper: { prefix: '❖❀～ ', suffix: ' ～❀❖' } },
+  { id: 'music', name: '♪ Music ♪', map: {}, wrapper: { prefix: '♪ d◕‿◕b ♪ ', suffix: ' ♪ d◔‿◔b ♪' } },
+  { id: 'robot', name: '<(+_+)> Robot', map: {}, wrapper: { prefix: '<(+_+)> ', suffix: ' <(+_+)>' } },
+  { id: 'butterfly', name: '❧Ƹ̵̡Ӝ̵̨̄Ʒ☙ Butterfly', map: {}, wrapper: { prefix: '❧Ƹ̵̡Ӝ̵̨̄Ʒ☙ ', suffix: ' ❧Ƹ̵̡Ӝ̵̨̄Ʒ☙' } },
+  { id: 'gun', name: '︻╦̵̵̿╤─ Gun', map: {}, wrapper: { prefix: '', suffix: ' ︻╦̵̵̿╤─ ҉~•' } },
+  { id: 'cool', name: '😎 Cool 😎', map: {}, wrapper: { prefix: '😎 ', suffix: ' 😎' } },
+  { id: 'ghost', name: '👻 Ghost 🍬', map: {}, wrapper: { prefix: '👻🍬 ', suffix: ' 😈🐍' } },
+  { id: 'devil', name: '😈 Devil 🐍', map: {}, wrapper: { prefix: '♠✌ ', suffix: ' ൠ👻' } },
+  { id: 'love', name: '💝 Love 💝', map: {}, wrapper: { prefix: '💝 ', suffix: ' 💝' } },
+  { id: 'cute_face', name: '【｡_｡】 Face', map: {}, wrapper: { prefix: '【｡_｡】 ', suffix: ' 【｡_｡】' } },
+
+  // Fancy Decorative
+  { id: 'dots', name: '°•.•° Dots °•.•°', map: {}, wrapper: { prefix: '°•.•°¤*✬.•°°• ', suffix: ' °•°•.✬*¤°•.•°' } },
+  { id: 'hearts_fancy', name: '❤꧁ღ⊱♥ Hearts', map: {}, wrapper: { prefix: '❤꧁ღ⊱♥ ', suffix: ' ♥⊱ღ꧂❤' } },
+  { id: 'stars_fancy', name: '°⨳° Stars °⨳°', map: {}, wrapper: { prefix: '°⨳°·..·°⨳°⊹٭ ', suffix: ' ٭⊹°⨳°·..·°⨳°' } },
+  { id: 'pink', name: 'ミ💖 Pink 💖彡', map: {}, wrapper: { prefix: 'ミ💖 ', suffix: ' 💖彡' } },
+  { id: 'star_border', name: '★¸.•☆•.¸★ Star', map: {}, wrapper: { prefix: '★¸.•☆•.¸★ ', suffix: ' ★⡀.•☆•.★' } },
+  { id: 'heart_circle', name: '◦•●❤♡ Heart', map: {}, wrapper: { prefix: '◦•●❤♡ ', suffix: ' ♡❤●•◦' } },
+  { id: 'diamond', name: '✵•.¸,✵° Diamond', map: {}, wrapper: { prefix: '✵•.¸,✵°✵.｡.✰ ', suffix: ' ✰.｡.✵°✵,¸.•✵' } },
+  { id: 'flower_face', name: '🌸ξξ(∵❤◡❤∵) Flower', map: {}, wrapper: { prefix: '🌸ξξ(∵❤◡❤∵)ξξ·¯·♩¸ ', suffix: ' ¸♩·¯·ξξ(∵❤◡❤∵)ξξ🌸' } },
+  { id: 'mystical', name: '¸„٭⊹✡ Mystical', map: {}, wrapper: { prefix: '¸„٭⊹✡•~⍣°"ˆ˜¨ ', suffix: ' ¨˜ˆ"°⍣~•✡⊹٭„¸' } },
+  { id: 'star_sparkle', name: '٭⊹¤ Star Sparkle', map: {}, wrapper: { prefix: '٭⊹¤.•⨳•.*☆✬ ', suffix: ' ✬☆*.•⨳•.¤⊹٭' } },
+  { id: 'mega_heart', name: 'ミミ◦❧◦ Mega Heart', map: {}, wrapper: { prefix: 'ミミ◦❧◦°˚°◦.¸¸◦°´❤*•.¸♥ ', suffix: ' ♥¸.•*❤´°◦¸¸.◦°˚°◦☙◦彡彡' } },
+  { id: 'star_simple', name: '·.★·.·´¯` Star', map: {}, wrapper: { prefix: '·.★·.·´¯`·.·★ ', suffix: ' ★·.·´¯`·.·★.·' } },
+  { id: 'heart_dots', name: '♥❤♥.¸• Heart Dots', map: {}, wrapper: { prefix: '♥❤♥.¸•❤`.¸•❤`.¸ ', suffix: ' ¸.`❤•¸.`❤•¸.♥❤♥' } },
+  { id: 'music_face', name: '(¯`\'•.¸❤♫♪ Music', map: {}, wrapper: { prefix: '(¯`\'•.¸❤♫♪♥(◠‿◠)♥♫♪❤¸.•\'´¯) ', suffix: ' (¯`\'•.¸❤♫♪♥(◠‿◠)♥♫♪❤¸.•\'´¯)' } },
+  { id: 'simple_heart', name: '*¸ „„.•~¹° Heart', map: {}, wrapper: { prefix: '*¸ „„.•~¹°"ˆ˜¨♡ ', suffix: ' ♡¨˜ˆ"°¹~•.„¸*' } },
+  { id: 'lotus', name: '꧁•⊹٭ Lotus ٭⊹•꧂', map: {}, wrapper: { prefix: '꧁•⊹٭ ', suffix: ' ٭⊹•꧂' } },
+  { id: 'pink_heart', name: '💖´ *•.¸♥ Pink', map: {}, wrapper: { prefix: '💖´ *•.¸♥¸.•** ', suffix: ' **•.¸♥¸.•*´💖' } },
+  { id: 'double_heart', name: '•¤»((¯♥¯))«¤• Heart', map: {}, wrapper: { prefix: '•¤»((¯♥¯))«¤• ', suffix: ' •¤»((¯♥¯))«¤•' } },
+  { id: 'sinhala', name: '෴❤️෴ Sinhala ෴❤️෴', map: {}, wrapper: { prefix: '෴❤️෴ ෴❤️෴ ', suffix: ' ෴❤️෴ ෴❤️෴' } },
+  { id: 'wave_fancy', name: '¸,ø¤º°`° Wave', map: {}, wrapper: { prefix: '¸,ø¤º°`°º¤ø,¸¸,ø¤º° ', suffix: ' °º¤ø,¸¸,ø¤º°`°º¤ø,¸' } },
+
+  // Glitch/Special combining
+  { id: 'dots_above', name: '░ Dots ░', map: {}, wrapper: { prefix: '░', suffix: '░' } },
+  { id: 'heart_between', name: 'P♥ Heart Between', map: {}, wrapper: { prefix: '', suffix: '' } }, // Special handling needed
+  { id: 'wingdings', name: '🏱︎ Wingdings', map: {}, wrapper: { prefix: '', suffix: '' } }, // Wingdings style
+
+  // Cute/Kawaii
+  { id: 'kawaii', name: '(っ◔◡◔)っ ♥ Kawaii', map: {}, wrapper: { prefix: '(っ◔◡◔)っ ♥ ', suffix: ' ♥' } },
+  { id: 'bear', name: 'ʕ•ᴥ•ʔ Bear', map: {}, wrapper: { prefix: 'ʕ•ᴥ•ʔ ', suffix: ' ʕ•ᴥ•ʔ' } },
 ];
 
 export function transform(text: string, styleId: string): string {
