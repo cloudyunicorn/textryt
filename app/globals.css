@@ -101,5 +101,17 @@
 
   body {
     @apply bg-background text-foreground;
+    /* Improve rendering of combining characters on mobile */
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Ensure combining characters render properly */
+  p,
+  span,
+  div {
+    font-variant-ligatures: none;
+    font-feature-settings: normal;
   }
 }

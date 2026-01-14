@@ -24,6 +24,21 @@ export default function FancyTextGenerator() {
         toast.info("Cleared text");
     };
 
+    const getTextDecoration = (styleId: string) => {
+        if (styleId === 'strike') return 'line-through';
+        if (styleId === 'underline') return 'underline';
+        if (styleId === 'slash') return 'line-through';
+        return 'none';
+    };
+
+    const getTransformedText = (text: string, styleId: string) => {
+        // For strikethrough and underline, return plain text (CSS will handle decoration)
+        if (styleId === 'strike' || styleId === 'underline' || styleId === 'slash') {
+            return text || "Fancy Text";
+        }
+        return transform(text || "Fancy Text", styleId);
+    };
+
     return (
         <div className="w-full max-w-4xl mx-auto space-y-8">
             {/* Input Area */}
@@ -54,14 +69,15 @@ export default function FancyTextGenerator() {
             {/* Output Grid */}
             <div className="grid gap-4 md:grid-cols-2">
                 {fontStyles.map((style) => {
-                    const transformedText = transform(input || "Fancy Text", style.id);
+                    const transformedText = getTransformedText(input, style.id);
+                    const actualCopyText = transform(input || "Fancy Text", style.id);
                     return (
                         <Card
                             key={style.id}
                             className="group relative overflow-hidden transition-all duration-300 hover:shadow-md hover:border-primary/20 bg-card/50 hover:bg-card"
                         >
                             <div
-                                onClick={() => handleCopy(transformedText)}
+                                onClick={() => handleCopy(actualCopyText)}
                                 className="p-5 flex flex-col gap-3 cursor-pointer"
                             >
                                 <div className="flex items-center justify-between">
@@ -71,7 +87,15 @@ export default function FancyTextGenerator() {
                                     <Type className="w-3 h-3 text-muted-foreground/20 group-hover:text-primary/20" />
                                 </div>
 
-                                <p className="text-lg md:text-xl font-medium break-words text-foreground/90">
+                                <p
+                                    className="text-lg md:text-xl font-medium break-words text-foreground/90"
+                                    style={{
+                                        fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+                                        unicodeBidi: 'normal',
+                                        whiteSpace: 'normal',
+                                        textDecoration: getTextDecoration(style.id)
+                                    }}
+                                >
                                     {transformedText}
                                 </p>
 
